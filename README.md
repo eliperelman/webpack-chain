@@ -219,6 +219,13 @@ merge(obj, omit)
 when(condition, whenTruthy, whenFalsy)
 ```
 
+```js
+// Execute a function against the current configuration context
+// handler: Function -> ChainedMap
+  // A function which is given a single argument of the ChainedMap instance
+batch(handler)
+```
+
 ## ChainedSet
 
 Another of the core API interfaces in webpack-chain is a `ChainedSet`. A `ChainedSet` operates
@@ -278,6 +285,13 @@ merge(arr)
 // whenFalsy: Optional Function -> ChainedSet
   // invoked when condition is falsy, given a single argument of the ChainedSet instance
 when(condition, whenTruthy, whenFalsy)
+```
+
+```js
+// Execute a function against the current configuration context
+// handler: Function -> ChainedMap
+  // A function which is given a single argument of the ChainedMap instance
+batch(handler)
 ```
 
 ## Shorthand methods
